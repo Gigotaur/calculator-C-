@@ -1,5 +1,6 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
+#include <cmath>
 int main()
 {
   int a,b,n;
@@ -19,10 +20,14 @@ int main()
        printf("The multiplication of %d and %d is %d",a,b,a*b);
        break;
     case 4:
-       printf("The division of %d and %d is %d",a,b,a-b);
-       break;
+       if (b==0){
+        printf("Invalid operation");
+        }
+       else
+        printf("The division of %d and %d is %d",a,b,a/b);
+        break;
     case 5:
-        printf("The Subtraction of %d and %d is %d",a,b,a-b);
+        printf("The Subtraction of %d and %d is %d",a,b, math.sqrt(a));
         break;
     default:
       printf("Invalid operation");
